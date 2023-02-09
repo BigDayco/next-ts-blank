@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"><a href="https://bigdayco.com.br" target="_blank"><img style="width: 120px; height:120px; border-radius:99999px; overflow:hidden;" src="public/logo-bd.png" alt="logo bigday"></a></p>
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<p align="center">
+<a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="commitizen"></a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Template Default - Nextjs Blank -- v0.1.0
+**Dependências:**
+- Nextjs: v13.1.6
+- Typescript: v4.9.5
+- Eslint: v8.33.0
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Organização do versionamento - Git flow
+***Branch Main***
+- Principal branch, aqui é onde temos todo o código de produção. Todas as novas funcionalidades que estão sendo desenvolvidas, em algum momento, serão mescladas ou associadas a Master. As formas de interagir com essa branch são através de uma Hotfix ou de uma nova Release.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+***Branch Dev***
+- É a branch onde fica o código do próximo deploy. Ela serve como uma linha do tempo com os últimos desenvolvimentos, isso significa que ela possui funcionalidades que ainda não foram publicadas e que posteriormente vão ser associadas com a branch Main.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+***Branch Feat***
+- São branches utilizadas para o desenvolvimento de funcionalidades específicas. É recomendável que essas branches sigam uma convenção de nome, a convenção mais utilizada é iniciar o nome das branches com feature, por exemplo, _"feat/dropdown-component_". É importante saber que essas features branches são criadas ***sempre a partir da branch Dev***.
 
-## Learn More
+***Branch Hotfix***
+- É uma branch criada a partir da main para realizar correções imediatas encontradas no sistema em **produção**. Quando concluída, ela é excluída após realizar o merge com as branches Main e Develop.
+Hotfix são criados a partir da Branch Main e quando os finalizamos, eles são mesclados tanto na Branch Main quanto na branch de desenvolvimento
+Temos uma branch de hotfix para cada hotfix que precisamos implementar!
 
-To learn more about Next.js, take a look at the following resources:
+## Padronização dos Commits:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Mensagems de commit deverá ser realizadas com a especificação do [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/). Ela define um conjunto de regras para criar um histórico de commit explícito.
