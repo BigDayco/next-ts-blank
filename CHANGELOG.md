@@ -1,5 +1,11 @@
 # nextjs-ts-blank
 
+## 1.1.0
+
+### Minor Changes
+
+- updated to nextjs 13
+
 ## 1.0.2
 
 ### Patch Changes
