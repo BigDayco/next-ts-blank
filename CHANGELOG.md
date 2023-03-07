@@ -1,5 +1,18 @@
 # nextjs-ts-blank
 
+## 1.0.2
+
+### Patch Changes
+
+- update imports
+
+## 1.0.1
+
+### Patch Changes
+
+- remove @nextjs/fonts dependency
+  - Now next fonts are native
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,6 +1,6 @@
 {
   "name": "nextjs-ts-blank",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish"
+    "release": "npm run build && changeset publish"
   },
   "dependencies": {
     "@types/node": "18.13.0",
