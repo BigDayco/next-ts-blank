@@ -7,9 +7,9 @@
 </p>
 
 
-# Template Default - Nextjs Blank -- v0.1.0
+# Template Default - Nextjs Blank -- v1.1.1
 **Dependências:**
-- Nextjs: v13.1.6
+- Nextjs: v13.2.3
 - Typescript: v4.9.5
 - Eslint: v8.33.0
 
