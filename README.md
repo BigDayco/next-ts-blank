@@ -7,7 +7,7 @@
 </p>
 
 
-# Template Default - Nextjs Blank -- v1.1.1
+# Template Default - Nextjs Blank -- v1.1.2
 **Dependências:**
 - Nextjs: v13.2.3
 - Typescript: v4.9.5
